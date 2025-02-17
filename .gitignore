@@ -1,0 +1,5 @@
+api_key.env
+mail_duomenys.txt
+/__pycache__
+/creds/
+*.db
