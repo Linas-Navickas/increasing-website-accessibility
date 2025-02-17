@@ -8,12 +8,12 @@ class Scraper:
     def file_exist(self, response, file_name):
         if response.status_code == 200:
             logging.warning(
-                f"failas {file_name} rastas. Status code: %d", response.status_code
+                f"file {file_name} found. Status code: %d", response.status_code
             )
             return True
         else:
             logging.warning(
-                f"failas {file_name} nerastas. Status code: %d", response.status_code
+                f"file {file_name} do not found. Status code: %d", response.status_code
             )
             return False
             

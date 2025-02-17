@@ -79,15 +79,15 @@ if corection_text_list and heading_text_list:
         )
         db.execute_query(database="webpage_database.db", query=query)
 else:
-    logging.warning("Neirasyta i db")
+    logging.warning("Not written to the DB")
 
 to_email, subject, content = read_email_data(PATH_TO_EMAIL_TEMPLATE)
 gmail_client.send_email(to_email, subject, content)
 logging.warning(
     """
-    Darbas atliktas:
-    - Web puslapis nuskaitytas
-    - Duomenys sukelti i duomenų baze
-    - El. laiskas issiustas
+    Work completed:
+    - Web page read
+    - Data uploaded to the database
+    - Email sent
 """
 )
