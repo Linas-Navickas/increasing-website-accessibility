@@ -6,7 +6,7 @@ ANTRASCIU_STRUKTURA_CREATE_QUERY = """
 """
 TEKSTO_KOREKCIJOS_REKOMENDACIJOS_CREATE_QUERY = """
     CREATE TABLE IF NOT EXISTS teksto_korekcijos_rekomendacijos (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        id INTEGER PRIMARY KEY,
         original_word TEXT NOT NULL,
         suggested_correction TEXT NOT NULL,
         reasoning TEXT
